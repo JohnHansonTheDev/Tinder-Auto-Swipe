@@ -1,7 +1,13 @@
 # Tinder-Auto-Swipe
 Greasemonkey script( Auto swiper for tinder )
 
-Add script to Greasemonkey( firefox add on )
+You'll need the greasemonkey add on for firefox or tamper monkey for chrome
+
+https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
+
+click new script on greasemonkey
+copy paste the script 
+save
 
 Go to 
 
