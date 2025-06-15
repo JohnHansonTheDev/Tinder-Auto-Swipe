@@ -17,7 +17,7 @@ var i = 0;
     i = 0;
     
     $(".button").each( function a(){ 
-      if( i == 3 ){
+      if( i == 4 ){
         $(this).click();
       }
       i++;
