@@ -1,27 +1,30 @@
 // ==UserScript==
-// @name        Tinder-Auto-Swiper
-// @namespace   Tinder
-// @include     https://tinder.com/app/recs
-// @require        http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js
-// @version     1
-// @run-at document-end
-// @grant       none
+// @name         Tinder Swipe Automation Tool
+// @namespace    TinderAutomation
+// @match        https://tinder.com/*
+// @require      https://code.jquery.com/jquery-3.7.1.min.js
+// @version      2.0
+// @run-at       document-end
+// @grant        none
 // ==/UserScript==
 
+(function() {
+    'use strict';
 
-alert("auto clicker is on");
-var i = 0;
+    console.log("Tinder Automation Tool initialized.");
 
+    const clickInterval = 100; // Interval in milliseconds
 
-  setInterval( function a(){
-    i = 0;
-    
-    $(".button").each( function a(){ 
-      if( i == 4 ){
-        $(this).click();
-      }
-      i++;
-    });	
-  }, 100)
-  
-  
+    setInterval(function executeSwipe() {
+        let buttonIndex = 0;
+
+        $(".button").each(function evaluateButton() {
+            // Target the 5th button (index 4) which typically corresponds to the Like action
+            if (buttonIndex === 4) {
+                $(this).trigger("click");
+            }
+            buttonIndex++;
+        });
+        
+    }, clickInterval);
+})();
